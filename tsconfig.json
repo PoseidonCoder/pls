@@ -1,0 +1,9 @@
+{
+    "$schema": "https://json.schemastore.org/jsconfig",
+    "compilerOptions": {
+      "target": "es2015",
+      "module": "commonjs",
+      "lib": ["es2015"],
+      "outDir": "build"
+    }
+}

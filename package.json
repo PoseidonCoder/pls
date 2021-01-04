@@ -1,0 +1,27 @@
+{
+  "name": "liason",
+  "version": "1.0.0",
+  "description": "\"Liason\" is a NodeJS promise-based, asynchronous, minimalistic HTTP request API aimed towards beginners.\r [*Javascript Promise Tutorial*](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoseidonCoder/liason.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PoseidonCoder/liason/issues"
+  },
+  "homepage": "https://github.com/PoseidonCoder/liason#readme"
+}
