@@ -1,5 +1,5 @@
 {
-  "name": "pls",
+  "name": "@poseidoncoder/pls",
   "version": "1.0.0",
   "description": "make requests simple",
   "main": "./build/index.js",
