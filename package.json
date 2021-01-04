@@ -1,5 +1,5 @@
 {
-  "name": "liason",
+  "name": "pls",
   "version": "1.0.0",
   "description": "make requests simple",
   "main": "./build/index.js",
@@ -13,13 +13,13 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PoseidonCoder/liason.git"
+    "url": "git+https://github.com/PoseidonCoder/pls.git"
   },
   "keywords": ["typescript", "ajax", "simple"],
   "author": "Lukas D",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PoseidonCoder/liason/issues"
+    "url": "https://github.com/PoseidonCoder/pls/issues"
   },
-  "homepage": "https://github.com/PoseidonCoder/liason#readme"
+  "homepage": "https://github.com/PoseidonCoder/pls#readme"
 }

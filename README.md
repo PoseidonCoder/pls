@@ -1,43 +1,44 @@
 <div align='center'>
 
-# liason
+# pls
 
-## an asynchronous, simple, [promise](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based HTTP request API
+## makes requests simple
+### an asynchronous, simple, [promise](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based HTTP request API
 
 </div>
 
-### examples
+## examples
 
-#### GET request
+### GET request
 ```js
-const liason = require("liason")
-liason.get("https://jsonplaceholder.typicode.com/todos/1")
+const pls = require("pls")
+pls.get("https://jsonplaceholder.typicode.com/todos/1")
     .then(response=> response.parse()) // returns reponse promise
     .then(body=> console.log(body)) // prints response to console
     .catch(error=> console.log(error)) // log error if there is an error
 ```
 
-#### POST request
+### POST request
 ```js
-const liason = require("liason")
-liason.post("https://jsonplaceholder.typicode.com/posts", "Hello World!", {"Content-type": "text/plain"})
+const pls = require("pls")
+pls.post("https://jsonplaceholder.typicode.com/posts", "Hello World!", {"Content-type": "text/plain"})
     .then(response => response.parse()) // returns reponse promise
     .then(body => console.log(body)) // prints response to console
     .catch(error => console.log(error)) // log error if there is an error
 ```
-### methods 
+## methods 
 
-#### liason
+### pls
 
 ```ts
-liason.get(endpoint: string): Promise<Response>
+pls.get(endpoint: string): Promise<Response>
 ```
 
 ```ts
-liason.post(endpoint: string, payload: any, headers: http.OutgoingHttpHeaders): Promise<Response>
+pls.post(endpoint: string, payload: any, headers: http.OutgoingHttpHeaders): Promise<Response>
 ```
 
-#### Response
+### Response
 
 ```ts
 Response.parse(): Promise<any>
