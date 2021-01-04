@@ -8,14 +8,18 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.14.16"
+    "@types/node": "^14.14.20"
   },
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PoseidonCoder/pls.git"
   },
-  "keywords": ["typescript", "ajax", "simple"],
+  "keywords": [
+    "typescript",
+    "ajax",
+    "simple"
+  ],
   "author": "Lukas D",
   "license": "ISC",
   "bugs": {

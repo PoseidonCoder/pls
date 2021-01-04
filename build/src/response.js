@@ -6,9 +6,6 @@ class Response extends http_1.IncomingMessage {
         super(response);
         this.original = response;
     }
-    /**
-     * parse
-     */
     parse() {
         return new Promise((resolve, reject) => {
             var body = '';
