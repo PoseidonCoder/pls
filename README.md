@@ -1,33 +1,44 @@
+<div align='center'>
+
 # liason
 
-"Liason" is a NodeJS promise-based, asynchronous, minimalistic HTTP request API aimed towards beginners.
-[*Javascript Promise Tutorial*](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+## an asynchronous, simple, [promise](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based HTTP request API
 
-#### GET request example:
+</div>
+
+### examples
+
+#### GET request
 ```js
 const liason = require("liason")
 liason.get("https://jsonplaceholder.typicode.com/todos/1")
-    .then(response=> response.parse()) //returns reponse promise
-    .then(body=> console.log(body)) //print response to console
-    .catch(error=> console.log(error)) //log error if there is an error
+    .then(response=> response.parse()) // returns reponse promise
+    .then(body=> console.log(body)) // prints response to console
+    .catch(error=> console.log(error)) // log error if there is an error
 ```
 
-#### POST request example:
+#### POST request
 ```js
 const liason = require("liason")
 liason.post("https://jsonplaceholder.typicode.com/posts", "Hello World!", {"Content-type": "text/plain"})
-    .then(response=> response.parse()) //returns reponse promise
-    .then(body=> console.log(body)) //print response to console
-    .catch(error=> console.log(error)) //log error if there is an error
+    .then(response => response.parse()) // returns reponse promise
+    .then(body => console.log(body)) // prints response to console
+    .catch(error => console.log(error)) // log error if there is an error
+```
+### methods 
+
+#### liason
+
+```ts
+liason.get(endpoint: string): Promise<Response>
 ```
 
-#### Liason Methods:
+```ts
+liason.post(endpoint: string, payload: any, headers: http.OutgoingHttpHeaders): Promise<Response>
+```
 
-`get(<url>, <headers>?) => response promise`
+#### Response
 
-`post(<url>, <body>, <headers>) => response promise`
-
-#### Parsing Request Body
-
-The "Liason" API adds the "parse" method to the response promise. Which parses the response to return the response body.
-`response.parse() => body promise` 
+```ts
+Response.parse(): Promise<any>
+``` 
