@@ -3,7 +3,9 @@
 # pls
 
 ## makes requests simple
-### an asynchronous, simple, [promise](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based HTTP request API
+
+## What is this?
+pls is an asynchronous, simple, [promise](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based HTTP request API
 
 </div>
 
