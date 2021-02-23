@@ -1,8 +1,6 @@
 <div align='center'>
 
-# pls
-
-## makes requests simple
+# pls - makes requests simple
 
 </div>
 
